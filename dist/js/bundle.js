@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,7 +94,18 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\n// globak js style\r\n// import x from \"./test\";\r\nconsole.log(\"welcome to typescript\");\r\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
+eval("\r\n// globak js style\r\n// import x from \"./test\";\r\nvar x = 23;\r\nconsole.log(\"welcome to typescript does it \" + x);\r\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
+
+/***/ }),
+
+/***/ 0:
+/*!*******************************!*\
+  !*** multi ./src/js/index.ts ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./src/js/index.ts */\"./src/js/index.ts\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.ts?");
 
 /***/ })
 
