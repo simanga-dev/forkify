@@ -15,8 +15,7 @@ export default class Seach {
    try {
 
      const res = await axios(`https://forkify-api.herokuapp.com/api/search?&q=${this.query}`);
-     this.rusults = res.data;
-     console.log(this.rusults);
+     this.rusults = res.data.recipes;
   
     } catch (error){
       alert(error);
