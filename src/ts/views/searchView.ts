@@ -8,6 +8,15 @@ interface recipeInt {
   title: string
   publisher: string
 }
+
+export const clearInput = (): void => {
+  elements.searchInput.value = ''
+} 
+
+export const cleareResults = (): void => {
+  elements.searchResList.innerHTML = ''
+} 
+
 const renderRecipe = (recipe: recipeInt): void => {
 
   const mockup = `
